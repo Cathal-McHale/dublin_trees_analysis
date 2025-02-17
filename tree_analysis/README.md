@@ -6,6 +6,7 @@ This project analyses whether houses on streets with tall trees are more expensi
 
 1. Ensure you have Python 3.11.5 installed on your system. You can download it from [python.org](https://www.python.org/).
 2. Clone this repository or download the source code.
+    - https://github.com/Cathal-McHale/dublin_trees_analysis
 3. Install the required dependencies:
     'pip install -r requirements.txt'
     
