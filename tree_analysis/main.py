@@ -7,6 +7,9 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 def main():
+    """
+    Main function to load data, analyse property prices, and log the results.
+    """
     try:
         data_loader = DataLoader(
             Path("dublin-trees.json"),
@@ -22,9 +25,7 @@ def main():
         logger.info(f"Average property price on short tree streets: €{short_avg:,.2f}")
         logger.info(f"Average property price on tall tree streets: €{tall_avg:,.2f}")
 
-        
     except Exception as e:
-        # log the error and raise it with traceback
         logger.error(f"Analysis failed: {e}", exc_info=True)
         raise
 
